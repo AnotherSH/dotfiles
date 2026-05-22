@@ -1,0 +1,135 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Campbell"
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "\u547d\u4ee4\u63d0\u793a\u7b26"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{d912af8a-8f29-58a2-b377-05158c831281}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 18 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{ab124350-558c-5e0b-a94d-ef12792ad02f}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 18 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{02fe0fc2-cc90-540b-a7e3-85c8f095937f}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 18",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{cd8dc17a-a3ca-5c3c-b9b9-24457435d7fa}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 18",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "antialiasingMode": "cleartype",
+                "backgroundImage": "C:\\Users\\Therapy\\Pictures\\\u6d77\u8d3c\u738b\\\u8def\u98de\u4e54\u5df4.png",
+                "colorScheme": "Tokyonight_moon",
+                "commandline": "\"D:\\Programs\\Scoop\\apps\\powershell\\current\\pwsh.exe\"",
+                "elevate": true,
+                "experimental.retroTerminalEffect": false,
+                "font": 
+                {
+                    "face": "RecMonoDuotone Nerd Font Propo",
+                    "size": 14,
+                    "weight": "bold"
+                },
+                "guid": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
+                "hidden": false,
+                "icon": "\ue756\"D:\\Programs\\Scoop\\apps\\windows-terminal\\1.24.11321.0\\ProfileIcons\\pwsh.scale-200.png\"",
+                "name": "PowerShell 7",
+                "opacity": 100,
+                "padding": "0",
+                "scrollbarState": "hidden",
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "PowerShell 7",
+                "useAcrylic": false
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#161722",
+            "black": "#161722",
+            "blue": "#49AAFF",
+            "brightBlack": "#D2CEC8",
+            "brightBlue": "#74B8FF",
+            "brightCyan": "#79DEFC",
+            "brightGreen": "#BFE685",
+            "brightPurple": "#B385FF",
+            "brightRed": "#F86B76",
+            "brightWhite": "#ADCCF0",
+            "brightYellow": "#FFC36D",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#4CCFFC",
+            "foreground": "#C8D3F5",
+            "green": "#86DA85",
+            "name": "Tokyonight_moon",
+            "purple": "#AE81F8",
+            "red": "#FF6B76",
+            "selectionBackground": "#FFFFFF",
+            "white": "#879DBB",
+            "yellow": "#FFC36D"
+        }
+    ],
+    "themes": []
+}
