@@ -19,8 +19,8 @@ noremap h hzz
 noremap j jzz
 noremap k kzz
 noremap l lzz
-"noremap J 5jzz
-"noremap K 5kzz
+noremap J 5jzz
+noremap K 5kzz
 map nl :nohl<CR>
 map s <nop>
 map S :w<CR>
