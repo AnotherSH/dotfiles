@@ -15,7 +15,7 @@ return{
 	{
 		"sphamba/smear-cursor.nvim",
 		opts = {
-			cursor_color = "#00a2e8",
+			cursor_color = "#ffdd33",  -- blue: #00a2e8
 		-- Faster smear
 		--	stiffness = 0.8,                      -- 0.6      [0, 1]
 		--	trailing_stiffness = 0.6,             -- 0.45     [0, 1]
