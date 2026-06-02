@@ -216,6 +216,10 @@ require'nvim-web-devicons'.setup {
 }
 -- nvim-web-devicons --
 -----------------------------------------------------
+-- oil --
+require("oil").setup()
+-- oil --
+-----------------------------------------------------
 -- render-markdown --
 require('render-markdown').setup({
     -- Whether markdown should be rendered by default.

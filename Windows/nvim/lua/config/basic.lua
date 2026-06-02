@@ -12,6 +12,16 @@ vim.o.list = true
 vim.o.showcmd = true
 vim.o.wildmenu = true
 
+-- 设置shell为powershell
+if vim.fn.has("win32") == 1 then
+    vim.opt.shell = "pwsh" -- 优先使用 PowerShell 7+，如果没有则改成 "powershell.exe"
+    vim.opt.shellcmdflag = [[-NoLogo -NoProfile -NonInteractive -Command " [Console]::InputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'; "]]
+    vim.opt.shellredir = "2>&1 | Out-File -Encoding UTF8 %s"
+    vim.opt.shellpipe = "2>&1 | Tee-Object -FilePath %s"
+    vim.opt.shellquote = ""
+    vim.opt.shellxquote = ""
+end
+
 -- 临时文件路径
 local backup_dir = vim.fn.expand("~/AppData/Local/nvim-data/tmp/backup")
 local undo_dir = vim.fn.expand("~/AppData/Local/nvim-data/tmp/undo")
