@@ -82,6 +82,7 @@
             {
                 "antialiasingMode": "cleartype",
                 "backgroundImage": "C:\\Users\\Therapy\\Pictures\\\u6d77\u8d3c\u738b\\\u8def\u98de\u4e54\u5df4.png",
+                "backgroundImageOpacity": 0.2,
                 "colorScheme": "Tokyonight_moon",
                 "commandline": "\"D:\\Programs\\Scoop\\apps\\powershell\\current\\pwsh.exe\"",
                 "elevate": true,
@@ -95,13 +96,14 @@
                 "guid": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
                 "hidden": false,
                 "icon": "\ue756\"D:\\Programs\\Scoop\\apps\\windows-terminal\\1.24.11321.0\\ProfileIcons\\pwsh.scale-200.png\"",
+                "intenseTextStyle": "bright",
                 "name": "PowerShell 7",
                 "opacity": 100,
                 "padding": "0",
                 "scrollbarState": "hidden",
                 "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "PowerShell 7",
-                "useAcrylic": false
+                "useAcrylic": true
             }
         ]
     },

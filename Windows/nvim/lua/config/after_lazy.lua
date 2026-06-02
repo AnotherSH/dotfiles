@@ -1,7 +1,60 @@
 -----------------------------------------------------
 -- 启用主题，一定要在加载lazy.nvim之后调用 --
 -- gruber-darker 主题
-vim.cmd.colorscheme("gruber-darker")
+-- vim.cmd.colorscheme("gruber-darker")
+
+-- doom-monokai-pro 主题
+require("doom-monokai-pro").setup({
+	transparent_background = false,
+	terminal_colors = true,
+	dim_inactive = {
+		enabled = false,
+		percentage = 0.15,
+	},
+	styles = {
+		comments = { "italic" },
+		conditionals = { "italic" },
+		loops = {},
+		functions = {},
+		keywords = {},
+		strings = {},
+		variables = {},
+		numbers = {},
+		booleans = {},
+		properties = {},
+		types = {},
+		operators = {},
+	},
+	integrations = {
+		cmp = true,
+		gitsigns = true,
+		nvimtree = true,
+		neotree = true,
+		treesitter = true,
+		telescope = true,
+		lsp_trouble = true,
+		which_key = true,
+		indent_blankline = true,
+		dashboard = true,
+		bufferline = true,
+		mason = true,
+		noice = true,
+		notify = true,
+		mini = true,
+		flash = true,
+		leap = true,
+		markdown = true,
+		native_lsp = {
+			enabled = true,
+			underlines = {
+				errors = { "undercurl" },
+				hints = { "undercurl" },
+				warnings = { "undercurl" },
+				information = { "undercurl" },
+			},
+		},
+	},
+})
 
 -- cyberdream 主题
 -- require("cyberdream").setup({
@@ -83,11 +136,13 @@ vim.cmd.colorscheme("gruber-darker")
 --     --     gitsigns = true,
 --     -- },
 -- })
-
+-- 
 -- vim.cmd("colorscheme cyberdream")
 --
 -- 启用主题，一定要在加载lazy.nvim之后调用 --
+--
 -----------------------------------------------------
+--
 -- nvim-treesitter --
 require('nvim-treesitter').setup {
   -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)

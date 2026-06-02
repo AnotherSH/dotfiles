@@ -1,14 +1,27 @@
 return{
+	-- gruber-darker theme
+	{
+		"blazkowolf/gruber-darker.nvim"
+	},
+
+	-- doom-monokai-pro theme
+	{
+		"fdemb/doom-monokai-pro.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("doom-monokai-pro").setup({
+			-- your config here
+			})
+			vim.cmd.colorscheme("doom-monokai-pro")
+		end,
+	},
+
 	-- cyber theme
 	{
 		"scottmckendry/cyberdream.nvim",
 		lazy = false,
 		priority = 1000,
-	},
-
-	-- gruber-darker theme
-	{
-		"blazkowolf/gruber-darker.nvim"
 	},
 
 	-- cursor theme
