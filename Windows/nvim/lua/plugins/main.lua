@@ -71,7 +71,7 @@ return{
 		lazy = false,
 	},
 
-	--  render-markdown
+	-- render-markdown
 	{
 		'MeanderingProgrammer/render-markdown.nvim',
 		dependencies = { 

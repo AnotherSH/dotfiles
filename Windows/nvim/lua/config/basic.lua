@@ -38,9 +38,3 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     pattern = '*',
     command = "if line(\"'\\\"\") > 1 && line(\"'\\\"\") <= line(\"$\") | exe \"normal! g'\\\"\" | endif"
 })
-
--- vim-visual-multi 修改键位，需要放在 lazy 加载之前设置
-vim.g.VM_maps = {
-	["Add Cursor Down"] = '<C-j>',
-	["Add Cursor Up"]   = '<C-k>'
-}
