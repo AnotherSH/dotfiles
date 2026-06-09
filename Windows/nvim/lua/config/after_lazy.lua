@@ -149,7 +149,7 @@ require('nvim-treesitter').setup {
   install_dir = vim.fn.stdpath('data') .. '/site'
 }
 require('nvim-treesitter').install { 
-	'c', 'javascript', 'markdown' ,'markdown_inline', 'html' ,'latex' ,'yaml' 
+	'c', 'javascript', 'markdown' ,'markdown_inline', 'html' , 'latex' , 'yaml', 'c_sharp'
 }
 -- nvim-treesitter --
 -----------------------------------------------------
