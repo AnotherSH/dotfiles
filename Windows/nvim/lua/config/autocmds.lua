@@ -20,3 +20,21 @@ require("oil").setup({
   },
 })
 -- oil --
+
+-- 移除 LazyVim 内置的 wrap_spell 自动命令组
+-- 这行代码会彻底禁用该自动命令，使其不再对任何文件类型生效
+vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+-- 使用 BufReadPost 事件，在每次打开文件后执行 设置 nospell 和 vim.diagnostic.enable(false)
+vim.api.nvim_create_autocmd("BufReadPost", {
+  callback = function()
+    vim.opt.spell = false
+    vim.diagnostic.enable(false)
+    --    vim.diagnostic.config({
+    --      virtual_text = false,
+    --      signs = false,
+    --      underline = false,
+    --      update_in_insert = false,
+    --    })
+  end,
+})
