@@ -7,10 +7,6 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
--- 启用主题，一定要在加载lazy.nvim之后调用 --
--- gruber-darker 主题
--- vim.cmd.colorscheme("gruber-darker")
-
 -- oil --
 require("oil").setup({
   keymaps = {
