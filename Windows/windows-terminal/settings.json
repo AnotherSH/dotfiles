@@ -28,6 +28,11 @@
     "newTabMenu": 
     [
         {
+            "icon": null,
+            "profile": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
+            "type": "profile"
+        },
+        {
             "type": "remainingProfiles"
         }
     ],
