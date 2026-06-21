@@ -8,14 +8,58 @@ return {
   },
 
   {
-    "blazkowolf/gruber-darker.nvim",
-    enabled = true,
+    "d-bastian/gruber-dark.nvim",
+    enable = true,
+    name = "gruber-dark",
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme("gruber-darker")
+      require("gruber-dark").setup({
+        transparent = false,
+        terminal_colors = true,
+        dim_inactive = false,
+        styles = {
+          comments = { italic = true },
+          keywords = { bold = true },
+          functions = {},
+          variables = {},
+        },
+        integrations = {
+          blink_cmp = true,
+          cmp = true,
+          gitsigns = true,
+          indent_blankline = true,
+          lazy = true,
+          lsp = true,
+          lualine = true,
+          mini = true,
+          neo_tree = true,
+          noice = true,
+          notify = true,
+          nvim_tree = true,
+          oil = true,
+          render_markdown = true,
+          snacks = true,
+          telescope = true,
+          treesitter = true,
+          which_key = true,
+        },
+      })
+
+      vim.cmd.colorscheme("gruber-dark")
     end,
   },
+
+  -- 这个版本的gruber-darker终端里输入`--`的文字会看不见
+  -- {
+  --   "blazkowolf/gruber-darker.nvim",
+  --   enabled = false,
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme("gruber-darker")
+  --   end,
+  -- },
 
   {
     "fdemb/doom-monokai-pro.nvim",

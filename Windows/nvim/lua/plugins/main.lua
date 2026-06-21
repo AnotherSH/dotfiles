@@ -22,8 +22,9 @@ return {
         "permissions", -- 文件权限 (如 -rw-r--r--)
         "size", -- 文件大小
         "birthtime", -- 文件创建时间 (birth time)
+        -- "atime", -- 最后访问时间 (access time)
         "mtime", -- 最后修改时间 (modification time)
-        "type", -- 条目类型
+        -- "type", -- 条目类型
       },
     },
     -- Optional dependencies
