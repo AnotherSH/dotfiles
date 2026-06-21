@@ -2,7 +2,7 @@
 return {
   {
     "saghen/blink.cmp",
-    enabled = true,
+    enabled = false,
   },
   {
     "folke/noice.nvim",
@@ -10,7 +10,7 @@ return {
       -- 关键：禁用 LSP 签名帮助的增强显示
       lsp = {
         signature = {
-          enabled = true, -- 设为 false 即可关闭签名弹窗
+          enabled = false, -- 设为 false 即可关闭签名弹窗
         },
         -- 如果你还想保留其他 LSP 相关功能（如 hover、diagnostics），可以保留它们
         -- hover = { enabled = true },

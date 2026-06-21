@@ -7,16 +7,6 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
--- oil --
-require("oil").setup({
-  keymaps = {
-    ["<C-s>"] = false, -- 取消 垂直分割打开文件快捷键
-    ["<C-h>"] = false, -- 取消 水平分割打开文件快捷键
-    ["<C-t>"] = false, -- 取消 新开标签页打开文件快捷键
-  },
-})
--- oil --
-
 -- 移除 LazyVim 内置的 wrap_spell 自动命令组
 -- 这行代码会彻底禁用该自动命令，使其不再对任何文件类型生效
 vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")

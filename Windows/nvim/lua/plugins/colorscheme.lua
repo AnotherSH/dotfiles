@@ -3,13 +3,13 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight-night",
-      enabled = true,
+      enabled = false,
     },
   },
 
   {
     "blazkowolf/gruber-darker.nvim",
-    enabled = false,
+    enabled = true,
     lazy = false,
     priority = 1000,
     config = function()
