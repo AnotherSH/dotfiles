@@ -6,8 +6,7 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
-    "keybindings": 
-    [
+    "keybindings": [
         {
             "id": "Terminal.OpenNewTabProfile5",
             "keys": "ctrl+alt+shift+6"
@@ -25,8 +24,7 @@
             "keys": "ctrl+shift+6"
         }
     ],
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "icon": null,
             "profile": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
@@ -36,14 +34,11 @@
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "Campbell"
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -94,15 +89,14 @@
             },
             {
                 "antialiasingMode": "cleartype",
-                "backgroundImage": "C:\\Users\\Therapy\\Pictures\\\u6d77\u8d3c\u738b\\\u8def\u98de\u4e54\u5df4.png",
-                "backgroundImageOpacity": 0.2,
-                "colorScheme": "Tokyonight_moon",
+                //"backgroundImage": "C:\\Users\\Therapy\\Pictures\\\u6d77\u8d3c\u738b\\\u8def\u98de\u4e54\u5df4.png",
+                //"backgroundImageOpacity": 0.2,
+                "colorScheme": "Gruber Darker",
                 "commandline": "\"D:\\Programs\\Scoop\\apps\\powershell\\current\\pwsh.exe\"",
                 "elevate": true,
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "face": "RecMonoDuotone Nerd Font Propo",
+                "font": {
+                    "face": "IosevkaTerm Nerd Font Mono",
                     "size": 14,
                     "weight": "bold"
                 },
@@ -120,8 +114,30 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
+        {
+            "background": "#181818",
+            "black": "#52494E",
+            "blue": "#96A6C8",
+            "brightBlack": "#484848",
+            "brightBlue": "#96A6C8",
+            "brightCyan": "#95A99F",
+            "brightGreen": "#73C936",
+            "brightPurple": "#9E95C7",
+            "brightRed": "#C73C3F",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFDD33",
+            "cursorColor": "#FFDD33",
+            "cyan": "#95A99F",
+            "foreground": "#E4E4EF",
+            "green": "#73C936",
+            "name": "Gruber Darker",
+            "purple": "#9E95C7",
+            "red": "#C73C3F",
+            "selectionBackground": "#484848",
+            "white": "#E4E4EF",
+            "yellow": "#FFDD33"
+        },
         {
             "background": "#161722",
             "black": "#161722",
