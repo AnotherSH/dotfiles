@@ -6,7 +6,8 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
-    "keybindings": [
+    "keybindings": 
+    [
         {
             "id": "Terminal.OpenNewTabProfile5",
             "keys": "ctrl+alt+shift+6"
@@ -24,7 +25,8 @@
             "keys": "ctrl+shift+6"
         }
     ],
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "icon": null,
             "profile": "{79098e4e-3bbe-4ea3-8be8-30db1170d5fe}",
@@ -34,11 +36,14 @@
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "colorScheme": "Campbell"
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -89,13 +94,12 @@
             },
             {
                 "antialiasingMode": "cleartype",
-                //"backgroundImage": "C:\\Users\\Therapy\\Pictures\\\u6d77\u8d3c\u738b\\\u8def\u98de\u4e54\u5df4.png",
-                //"backgroundImageOpacity": 0.2,
                 "colorScheme": "Gruber Darker",
                 "commandline": "\"D:\\Programs\\Scoop\\apps\\powershell\\current\\pwsh.exe\"",
                 "elevate": true,
                 "experimental.retroTerminalEffect": false,
-                "font": {
+                "font": 
+                {
                     "face": "IosevkaTerm Nerd Font Mono",
                     "size": 14,
                     "weight": "bold"
@@ -114,7 +118,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#181818",
             "black": "#52494E",
