@@ -1,6 +1,6 @@
 return {
   -- live-server.nvim
   {
-    "barrettruth/live-server.nvim",
+    "https://forge.barrettruth.com/barrettruth/live-server.nvim",
   },
 }
