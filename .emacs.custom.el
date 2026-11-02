@@ -8,7 +8,8 @@
      default))
  '(display-line-numbers-type 'relative)
  '(inhibit-startup-screen t)
- '(package-selected-packages '(dash dash-functional gruber-darker-theme)))
+ '(package-selected-packages
+   '(dash dash-functional gruber-darker-theme multiple-cursors smex)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
