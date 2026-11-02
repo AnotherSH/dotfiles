@@ -25,6 +25,17 @@
 ;; 可选：统一终端和剪贴板的编码
 (set-terminal-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
+;; 配置eshell的编码, 防止外部命令(如git)输出乱码
+(add-hook 'eshell-mode-hook
+          (lambda ()
+	    ;; 强制eshell优先以UTF-8读取进程输出
+            (setq-local coding-system-for-read 'utf-8)
+	    ;; 确保git调用的less分页器使用UTF-8 (解决git log翻页乱码)
+            (setenv "LESSCHARSET" "utf-8")))
+;; 修复Windows下从外部复制中文到Emacs乱码的问题
+(when (eq system-type 'windows-nt)
+  (set-selection-coding-system 'utf-16-le) ; Windows剪切板默认是UTF-16
+  (set-clipboard-coding-system 'utf-16-le))
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)
