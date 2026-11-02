@@ -21,4 +21,6 @@ New-Item -Path "C:\Users\Therapy\AppData\Roaming\.emacs" -ItemType SymbolicLink 
 New-Item -Path "C:\Users\Therapy\AppData\Roaming\.emacs.custom.el" -ItemType SymbolicLink -Target "E:\developer\programing\dotfiles\.emacs.custom.el"
 
 New-Item -Path "C:\Users\Therapy\AppData\Roaming\.emacs.local" -ItemType SymbolicLink -Target "E:\developer\programing\dotfiles\.emacs.local"
+
+New-Item -Path "C:\Users\Therapy\AppData\Roaming\.emacs.rc" -ItemType SymbolicLink -Target "E:\developer\programing\dotfiles\.emacs.rc"
 ```
