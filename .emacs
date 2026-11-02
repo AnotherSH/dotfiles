@@ -1,5 +1,5 @@
 (add-to-list 'warning-suppress-types '(files missing-lexbind-cookie))
-
+ 
 ;;软件源配置
 (setq package-archives '(("gnu"    . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("nongnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
@@ -30,8 +30,15 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (global-display-line-numbers-mode 1)
+(column-number-mode t)
 (ido-mode 1)
 (ido-everywhere 1)
+
+;; 设置初始窗口大小
+(add-to-list 'initial-frame-alist '(width . 72))
+(add-to-list 'initial-frame-alist '(height . 18))
+;; 启动时最大化
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
 
 ;; simpc-mode
 ;; Adding `/path/to/simpc` to load-path so `require` can find it
