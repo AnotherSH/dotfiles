@@ -1,3 +1,5 @@
+(add-to-list 'warning-suppress-types '(files missing-lexbind-cookie))
+
 ;;软件源配置
 (setq package-archives '(("gnu"    . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("nongnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
