@@ -99,4 +99,7 @@
 
 (global-set-key (kbd "C-,") 'rc/duplicate-line)
 
+;; 给Org-Mode添加Markdown导出功能
+(eval-after-load "org" '(require 'ox-md nil t))
+
 (load-file custom-file)
