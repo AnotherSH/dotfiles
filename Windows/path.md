@@ -11,6 +11,10 @@ New-Item -Path "C:\Users\Therapy\AppData\Local\nvim" -ItemType SymbolicLink -Tar
 - $PROFILE
   - C:\Users\Therapy\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 
+```powershell
+$p = Split-Path -Parent $PROFILE; if (!(Test-Path $p)) { New-Item -ItemType Directory -Path $p -Force | Out-Null }; New-Item -Path $PROFILE -ItemType SymbolicLink -Target "E:\developer\programing\dotfiles\Windows\PowerShell\Microsoft.PowerShell_profile.ps1"
+```
+
 # emacs
 
 - C:\Users\Therapy\AppData\Roaming

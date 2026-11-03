@@ -1,5 +1,3 @@
-(add-to-list 'warning-suppress-types '(files missing-lexbind-cookie))
- 
 ;;软件源配置
 (setq package-archives '(("gnu"    . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
                          ("nongnu" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/nongnu/")
@@ -25,6 +23,8 @@
 ;; 可选：统一终端和剪贴板的编码
 (set-terminal-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(setq buffer-file-coding-system 'utf-8)
 ;; 配置eshell的编码, 防止外部命令(如git)输出乱码
 (add-hook 'eshell-mode-hook
           (lambda ()
@@ -32,10 +32,21 @@
             (setq-local coding-system-for-read 'utf-8)
 	    ;; 确保git调用的less分页器使用UTF-8 (解决git log翻页乱码)
             (setenv "LESSCHARSET" "utf-8")))
-;; 修复Windows下从外部复制中文到Emacs乱码的问题
+
 (when (eq system-type 'windows-nt)
+  ;; 修复Windows下从外部复制中文到Emacs乱码的问题
   (set-selection-coding-system 'utf-16-le) ; Windows剪切板默认是UTF-16
-  (set-clipboard-coding-system 'utf-16-le))
+  (set-clipboard-coding-system 'utf-16-le)
+  (add-to-list 'process-coding-system-alist
+             '("pwsh" utf-8-dos . utf-8-unix))
+  ;; 设置默认shell
+  ;; 设置 shell-command (M-!) Windows下使用 PowerShell 7
+  (let ((pwsh-path "D:/Programs/Scoop/apps/powershell/current/pwsh.exe"))
+    (if (file-exists-p pwsh-path)
+        (progn
+          (setq shell-file-name pwsh-path)
+          ;; -Command 表示执行后面的字符串，我们加上设置输出编码的语句
+          (setq shell-command-switch "-Command")))))
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)

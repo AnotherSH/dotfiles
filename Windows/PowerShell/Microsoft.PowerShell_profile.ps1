@@ -1,10 +1,12 @@
 # ---------------- UTF‑8 全局配置 ----------------
 # 控制台I/O编码，解决外部程序(git/python)中文乱码
 [Console]::InputEncoding  = [System.Text.Encoding]::UTF8
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+#[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 
 # PowerShell向外部程序发送数据的编码
-$OutputEncoding = [System.Text.Encoding]::UTF8
+#$OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)
 
 # 设置Windows控制台代码页为UTF‑8
 chcp 65001 > $null
