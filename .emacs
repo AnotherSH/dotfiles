@@ -17,6 +17,7 @@
 (add-to-list 'default-frame-alist '(font . "Sarasa Mono SC Nerd Font-20"))
 
 (rc/require-theme 'gruber-darker)
+(rc/require 'markdown-mode)
 
 ;; 设置所有默认编码为 UTF-8
 (set-default-coding-systems 'utf-8)
